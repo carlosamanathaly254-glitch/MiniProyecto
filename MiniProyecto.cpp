@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cctype>
 using namespace std;
 
 int cant;
@@ -120,13 +119,44 @@ void submenu(){
 
 void salir(){
     cout<<"Saliendo del menu..."<<endl;
-    return;
+}
+
+void menu(){
+     int option;
+     
+    do{
+    cout<<"==============MENU==============="<<endl;
+    cout<<"1. Registrar productos y cantidades vendidas"<<endl;
+    cout<<"2. Mostrar listado de productos"<<endl;
+    cout<<"3. Mostrar el total de ventas realizadas"<<endl;
+    cout<<"4. Mostrar mayor y menor cantidades vendidas"<<endl;
+    cout<<"5. Buscar productos"<<endl;
+    cout<<"6. Salir"<<endl;
+    cout<<"Seleccione una opcion: ";
+    cin>>option;
+    while(cin.fail() || option<0){
+                cout<<"Ingrese una cantidad valida"<<endl;
+                cin.clear();
+                cin.ignore(100,'\n');
+                cin>>option;
+            }
+    if(option==1){
+    registro();
+    }else if(option==2){
+    mostrar();
+    }else if(option==3){
+    totalVentas();
+    }else if(option==4){
+    mayorMenor();
+    }else if(option==5){
+    buscar();
+    submenu();
+    }else if(option==6){
+    salir();
+    }
+    }while(option>0 && option<7);
 }
 
 int main(){
-    /*registro();/*
-    mostrar();
-    totalVentas();*/
-    //mayorMenor();
-    salir();
+    menu();
 }
