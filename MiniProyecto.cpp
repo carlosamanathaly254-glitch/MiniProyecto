@@ -73,10 +73,16 @@ void mayorMenor(){
 }
   int opcion;
 void buscar(){
+    if(cant==0){
+        cout<<"No se han registrado productos"<<endl;
+    }
     cout<<"1. Buscar productos por nombre"<<endl;
     cout<<"2. Buscar productos por cantidad vendida"<<endl;
     cin>> opcion;
 }
+
+
+
 string nombre;
 int r=0;
 int p=0;
@@ -85,6 +91,7 @@ void submenu(){
     if(opcion==1){
         cout<<"Ingrese el nombre del producto: ";
         cin>>nombre;
+
         for(int i=0;i<cant;i++){
         if(nombre== pro[i]){
             r=i;
@@ -94,7 +101,15 @@ void submenu(){
     }else if(opcion==2){
         cout<<"Ingrese la cantidad del producto: ";
         cin>>cantidad;
+        while(cin.fail() || cantidad<0){
+                cout<<"Ingrese una cantidad valida"<<endl;
+                cin.clear();
+                cin.ignore(100,'\n');
+                cin>>cantidad;
+            }
+
         for(int i=0;i<cant;i++){
+            
             if(cantidad==x[i]){
                 p=i;
             }
@@ -103,9 +118,13 @@ void submenu(){
     }
 }
 
+
+
 int main(){
     registro();/*
     mostrar();
     totalVentas();*/
-    mayorMenor();
+    //mayorMenor();
+    buscar();
+    submenu();
 }
