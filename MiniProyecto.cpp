@@ -23,10 +23,20 @@ void registro(){
 
         }
     }else{
-        cout<<"Ingrese una cantidad valida";
+        cout<<"Ingrese una cantidad valida"<<endl;
     }
 }
 
+void mostrar(){
+    if(cant>0){
+        for(int i=0;i<cant;i++){
+            cout<<pro[i]<< " - "<<x[i]<<endl;
+        }
+    }else{
+        cout<<"No se han registrado productos";
+    }
+}
 int main(){
     registro();
+    mostrar();
 }
