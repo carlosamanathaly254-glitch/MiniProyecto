@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cctype>
 using namespace std;
 
 int cant;
@@ -9,21 +10,15 @@ void registro(){
     cin>>cant;
     if(cant>0 && cant<16){
         for(int i=0;i<cant;i++){
-            cout<<"Ingrese el producto "<<i+1<<endl;
+            cout<<"Ingrese el nombre del producto "<<i+1<<endl;
             cin>> pro[i];
-            while(cin.fail()){
-                cout<<"Ingrese un producto";
-                cin.clear();
-                cin.ignore(100,'\n');
-                cin>>pro[i];
-            }
-            cout<<"Ingrese el precio del producto"<<i+1;
+            cout<<"Ingrese la cantidad del producto "<<i+1<<endl;
             cin>>x[i];
             while(cin.fail() || x[i]<0){
-                cout<<"Ingrese una cantidad valida";
+                cout<<"Ingrese una cantidad valida"<<endl;
                 cin.clear();
                 cin.ignore(100,'\n');
-                cin>>pro[i];
+                cin>>x[i];
             }
 
         }
