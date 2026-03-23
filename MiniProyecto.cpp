@@ -49,9 +49,31 @@ void totalVentas(){
     }
 }
 
+void mayorMenor(){
+    if(cant==0){
+        cout<<"No se han registrado productos"<<endl;
+    }
+    int mayor= x[0];
+    int menor= x[0];
+    int m, M;
+    for(int i=0; i<cant;i++){
+        if(mayor<=x[i]){
+            mayor= x[i];
+            M= i;
+            //cout<<pro[i]<<" - "<<mayor<<endl;
+        }
+        if(menor>=x[i]){
+            menor= x[i];
+            m=i;
+            cout<<pro[i]<<" - "<<menor<<endl;
+        }
+    }
+    cout<<"Cantidad vendidad más alta: "<<pro[M]<<" - "<<mayor<<endl;
+}
 
 int main(){
-    registro();
+    registro();/*
     mostrar();
-    totalVentas();
+    totalVentas();*/
+    mayorMenor();
 }
