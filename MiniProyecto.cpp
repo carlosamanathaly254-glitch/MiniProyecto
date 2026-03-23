@@ -118,13 +118,15 @@ void submenu(){
     }
 }
 
-
+void salir(){
+    cout<<"Saliendo del menu..."<<endl;
+    return;
+}
 
 int main(){
-    registro();/*
+    /*registro();/*
     mostrar();
     totalVentas();*/
     //mayorMenor();
-    buscar();
-    submenu();
+    salir();
 }
