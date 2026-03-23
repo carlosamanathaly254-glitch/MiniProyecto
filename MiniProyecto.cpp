@@ -71,6 +71,37 @@ void mayorMenor(){
     cout<<"Cantidad vendida mas alta: "<<pro[M]<<" - "<<mayor<<endl;
     cout<<"Cantidad vendida mas alta: "<<pro[m]<<" - "<<menor<<endl;
 }
+  int opcion;
+void buscar(){
+    cout<<"1. Buscar productos por nombre"<<endl;
+    cout<<"2. Buscar productos por cantidad vendida"<<endl;
+    cin>> opcion;
+}
+string nombre;
+int r=0;
+int p=0;
+int cantidad;
+void submenu(){
+    if(opcion==1){
+        cout<<"Ingrese el nombre del producto: ";
+        cin>>nombre;
+        for(int i=0;i<cant;i++){
+        if(nombre== pro[i]){
+            r=i;
+        }
+        }
+        cout<<nombre<<" - "<<x[r]<<endl;
+    }else if(opcion==2){
+        cout<<"Ingrese la cantidad del producto: ";
+        cin>>cantidad;
+        for(int i=0;i<cant;i++){
+            if(cantidad==x[i]){
+                p=i;
+            }
+        }
+        cout<<cantidad<<" - "<<pro[p]<<endl;
+    }
+}
 
 int main(){
     registro();/*
