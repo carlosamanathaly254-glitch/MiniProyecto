@@ -1,4 +1,5 @@
 # Bootcamp Programación de Cero a POO
+
 ## Descripción
 
 Este proyecto corresponde al bootcamp Programación de Cero a POO, un curso virtual en vivo orientado a estudiantes que están iniciando en el mundo de la programación y desean construir una base sólida antes de avanzar hacia la Programación Orientada a Objetos.
@@ -31,6 +32,7 @@ Funciones y modularización
 Depuración y corrección de errores
 Introducción a Git y GitHub
 Preparación de un mini proyecto en C++
+
 ## Estructura
 
 El repositorio se organiza en diferentes carpetas según el tipo de contenido trabajado durante el curso. Entre ellas se pueden encontrar:
@@ -43,7 +45,7 @@ README.md → documentación básica del repositorio
 
 La estructura puede modificarse o ampliarse conforme avance el curso.
 
-Herramientas utilizadas
+## Herramientas utilizadas
 
 Durante el bootcamp se utilizan principalmente las siguientes herramientas y tecnologías:
 
@@ -53,13 +55,14 @@ Git
 GitHub
 C++
 Java
-Autor
+
+## Autor
 
 Estudiante participante del bootcamp.
 
-Bootcamp guiado por Jhonatan Torres.
+Bootcamp guiado por **Jhonatan Torres**.
 
-Observaciones
+## Observaciones
 
 Este repositorio continuará actualizándose a medida que avance el bootcamp.
 Por lo tanto, el contenido, la estructura y los archivos pueden cambiar conforme se agreguen nuevas clases, ejercicios y proyectos.
