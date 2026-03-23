@@ -68,7 +68,7 @@ void mayorMenor(){
         }
     }
     cout<<"Cantidad vendida mas alta: "<<pro[M]<<" - "<<mayor<<endl;
-    cout<<"Cantidad vendida mas alta: "<<pro[m]<<" - "<<menor<<endl;
+    cout<<"Cantidad vendida mas baja: "<<pro[m]<<" - "<<menor<<endl;
 }
   int opcion;
 void buscar(){
@@ -119,6 +119,7 @@ void submenu(){
 
 void salir(){
     cout<<"Saliendo del menu..."<<endl;
+    return;
 }
 
 void menu(){
@@ -135,7 +136,7 @@ void menu(){
     cout<<"Seleccione una opcion: ";
     cin>>option;
     while(cin.fail() || option<0){
-                cout<<"Ingrese una cantidad valida"<<endl;
+                cout<<"Ingrese una opcion valida"<<endl;
                 cin.clear();
                 cin.ignore(100,'\n');
                 cin>>option;
