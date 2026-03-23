@@ -6,7 +6,7 @@ Este proyecto corresponde al bootcamp Programación de Cero a POO, un curso virt
 
 El enfoque del bootcamp sigue una progresión académica práctica:
 
-Lógica de programación → Diagramas → Pseudocódigo → C++ estructurado → Java POO
+**Lógica de programación → Diagramas → Pseudocódigo → C++ estructurado → Java POO**
 
 Durante el curso se desarrollan clases en vivo, ejercicios prácticos, tareas autónomas, evaluaciones y pequeños proyectos, con una metodología enfocada primero en comprender la lógica, luego representarla y finalmente implementarla en código.
 
@@ -20,28 +20,28 @@ También permite llevar un seguimiento del progreso en programación desde conce
 
 Hasta el momento el bootcamp ha abordado los siguientes temas:
 
-Lógica y resolución de problemas
-Diagramas de flujo
-Pseudocódigo en PSeint
-Introducción a C++
-Variables, operadores y entrada/salida
-Estructuras condicionales
-Estructuras repetitivas
-Arreglos
-Funciones y modularización
-Depuración y corrección de errores
-Introducción a Git y GitHub
-Preparación de un mini proyecto en C++
+- Lógica y resolución de problemas
+- Diagramas de flujo
+- Pseudocódigo en PSeint
+- Introducción a C++
+- Variables, operadores y entrada/salida
+- Estructuras condicionales
+- Estructuras repetitivas
+- Arreglos
+- Funciones y modularización
+- Depuración y corrección de errores
+- Introducción a Git y GitHub
+- Preparación de un mini proyecto en C++
 
 ## Estructura
 
 El repositorio se organiza en diferentes carpetas según el tipo de contenido trabajado durante el curso. Entre ellas se pueden encontrar:
 
-clases → ejemplos y código visto durante las clases
-ejercicios → ejercicios prácticos para reforzar la lógica de programación
-tareas → actividades asignadas para práctica individual
-proyectos → mini proyectos desarrollados durante el bootcamp
-README.md → documentación básica del repositorio
+- clases → ejemplos y código visto durante las clases
+- ejercicios → ejercicios prácticos para reforzar la lógica de programación
+- tareas → actividades asignadas para práctica individual
+- proyectos → mini proyectos desarrollados durante el bootcamp
+- README.md → documentación básica del repositorio
 
 La estructura puede modificarse o ampliarse conforme avance el curso.
 
@@ -49,16 +49,15 @@ La estructura puede modificarse o ampliarse conforme avance el curso.
 
 Durante el bootcamp se utilizan principalmente las siguientes herramientas y tecnologías:
 
-PSeInt
-VS Code
-Git
-GitHub
-C++
-Java
+- PSeInt
+- VS Code
+- Git
+- GitHub
+- C++
 
 ## Autor
 
-Estudiante participante del bootcamp.
+**Nathaly Carlosama** Estudiante participante del bootcamp.
 
 Bootcamp guiado por **Jhonatan Torres**.
 
