@@ -60,15 +60,16 @@ void mayorMenor(){
         if(mayor<=x[i]){
             mayor= x[i];
             M= i;
-            //cout<<pro[i]<<" - "<<mayor<<endl;
+            
         }
         if(menor>=x[i]){
             menor= x[i];
             m=i;
-            cout<<pro[i]<<" - "<<menor<<endl;
+            
         }
     }
-    cout<<"Cantidad vendidad más alta: "<<pro[M]<<" - "<<mayor<<endl;
+    cout<<"Cantidad vendida mas alta: "<<pro[M]<<" - "<<mayor<<endl;
+    cout<<"Cantidad vendida mas alta: "<<pro[m]<<" - "<<menor<<endl;
 }
 
 int main(){
