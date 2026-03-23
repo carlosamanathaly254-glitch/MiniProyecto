@@ -36,6 +36,18 @@ void mostrar(){
         cout<<"No se han registrado productos";
     }
 }
+
+int suma;
+void totalVentas(){
+    if(cant>0){
+        for(int i=0;i<cant;i++){
+            suma+= x[i];
+        }
+        cout<<"El numero total de ventas es: "<<suma<<endl;
+    }else{
+        cout<<"No se han registrado productos";
+    }
+}
 int main(){
     registro();
     mostrar();
