@@ -48,7 +48,10 @@ void totalVentas(){
         cout<<"No se han registrado productos";
     }
 }
+
+
 int main(){
     registro();
     mostrar();
+    totalVentas();
 }
