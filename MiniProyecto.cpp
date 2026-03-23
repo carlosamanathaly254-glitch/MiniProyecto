@@ -11,13 +11,19 @@ void registro(){
         for(int i=0;i<cant;i++){
             cout<<"Ingrese el producto "<<i+1<<endl;
             cin>> pro[i];
-            if(cin.fail()){
+            while(cin.fail()){
                 cout<<"Ingrese un producto";
+                cin.clear();
+                cin.ignore(100,'\n');
+                cin>>pro[i];
             }
             cout<<"Ingrese el precio del producto"<<i+1;
             cin>>x[i];
-            if(cin.fail() || x<0){
-                cout<<"Ingrese la cantidad vendida";
+            while(cin.fail() || x[i]<0){
+                cout<<"Ingrese una cantidad valida";
+                cin.clear();
+                cin.ignore(100,'\n');
+                cin>>pro[i];
             }
 
         }
